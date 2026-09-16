@@ -1,8 +1,8 @@
 # Audio Identification Edge Device R&D Guide
 
-This repository is a **design note / R&D brief**, not a production implementation. It documents a practical research path for exploring an edge device that can detect and classify gunshots from microphone audio while staying within microcontroller or small-FPGA limits.
+This repository is a **design note / R&D brief**, not a production implementation. It documents a practical research path for evaluating edge-audio sensing and classification approaches, using gunshot detection and coarse classification as the motivating case study under microcontroller and small-FPGA constraints.
 
-This material is intended for **lawful, safety-focused research and evaluation**. It provides high-level R&D guidance for sensing, classification, and system design to help prioritize experiments and prototype directions; it is **not** operational advice for weapon use or tactical deployment.
+This material is intended for **lawful, safety-focused research and evaluation**. It provides high-level guidance to help prioritize experiments, feature studies, model studies, and prototype directions; it is **not** operational advice for weapon use or tactical deployment.
 
 ## What this repository contains today
 
