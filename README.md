@@ -20,6 +20,8 @@ It does **not** currently include:
 - benchmark results
 - hardware reference designs
 
+The remaining sections are **non-implementation research considerations** meant to guide experiment design, feature selection, model selection, and hardware tradeoff discussions.
+
 ## Problem framing
 
 The desired outcomes are:
