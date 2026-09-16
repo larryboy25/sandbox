@@ -4,6 +4,22 @@ This repository is a **design note / R&D brief**, not a production implementatio
 
 This material is intended for **lawful, safety-focused research and evaluation**. It provides high-level R&D guidance for sensing, classification, and system design; it is **not** operational advice for weapon use or tactical deployment.
 
+## What this repository contains today
+
+At present, this repository contains documentation only:
+
+- high-level system guidance
+- practical modeling recommendations
+- data collection and evaluation advice
+
+It does **not** currently include:
+
+- trained models
+- inference firmware
+- datasets
+- benchmark results
+- hardware reference designs
+
 ## Problem framing
 
 The desired outcomes are:
@@ -65,6 +81,8 @@ Use a microphone chain that prioritizes **clean impulse capture** over bitrate m
 - Prefer **16-bit or 24-bit PCM**
 - Ensure the microphone and ADC do not clip badly on sharp impulses
 - Use automatic gain control only if it can be disabled or characterized
+
+In practice, **48 kHz** is the better starting point for MCU-class systems because it lowers RAM, storage, and compute cost, while **96 kHz** is useful only if testing shows the extra bandwidth materially improves classification or transient-shape capture.
 
 `96 kbps` is a compressed-stream rate, not a microphone sampling spec. For this problem, the important specs are:
 
